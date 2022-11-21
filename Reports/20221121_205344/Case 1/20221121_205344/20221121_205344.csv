@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Case 1,,,,2022-11-21 20:54:00,2022-11-21 20:54:08,7.398s,PASSED
+,,,,,,,
+Test Cases/Select Value Email From GET Single User,,,,2022-11-21 20:54:01,2022-11-21 20:54:08,6.726s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-11-21 20:54:02,2022-11-21 20:54:02,0.017s,PASSED
+"ResponseList = sendRequest(findTestObject(""ListUser""))",,,,2022-11-21 20:54:02,2022-11-21 20:54:05,2.593s,PASSED
+resultList = slurper.parseText(ResponseList.getResponseBodyContent()),,,,2022-11-21 20:54:05,2022-11-21 20:54:05,0.040s,PASSED
+println(resultList),,,,2022-11-21 20:54:05,2022-11-21 20:54:05,0.008s,PASSED
+"ResponseSingle = sendRequest(findTestObject(""SingleUser""))",,,,2022-11-21 20:54:05,2022-11-21 20:54:06,1.483s,PASSED
+result = slurper.parseText(ResponseSingle.getResponseBodyContent()),,,,2022-11-21 20:54:06,2022-11-21 20:54:06,0.001s,PASSED
+email = email,,,,2022-11-21 20:54:06,2022-11-21 20:54:06,0.009s,PASSED
+println(email),,,,2022-11-21 20:54:06,2022-11-21 20:54:06,0.001s,PASSED
+email = email,,,,2022-11-21 20:54:06,2022-11-21 20:54:06,0.001s,PASSED
+"println(""Email di Global Variable = "" + email)",,,,2022-11-21 20:54:06,2022-11-21 20:54:06,0.001s,PASSED
+"ResponseUpdate = sendRequest(findTestObject(""Update""))",,,,2022-11-21 20:54:06,2022-11-21 20:54:07,0.757s,PASSED
+resultUpdate = slurper.parseText(ResponseUpdate.getResponseBodyContent()),,,,2022-11-21 20:54:07,2022-11-21 20:54:07,0.000s,PASSED
+println(resultUpdate),,,,2022-11-21 20:54:07,2022-11-21 20:54:07,0.000s,PASSED
+"ResponseRegister = sendRequest(findTestObject(""RegisterSuccess""))",,,,2022-11-21 20:54:07,2022-11-21 20:54:08,0.776s,PASSED
+resultRegister = slurper.parseText(ResponseRegister.getResponseBodyContent()),,,,2022-11-21 20:54:08,2022-11-21 20:54:08,0.001s,PASSED
+println(resultRegister),,,,2022-11-21 20:54:08,2022-11-21 20:54:08,0.001s,PASSED

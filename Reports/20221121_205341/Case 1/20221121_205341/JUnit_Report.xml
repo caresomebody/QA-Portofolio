@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Case 1" time="9.645" tests="1" failures="0" errors="0">
+   <testsuite name="Case 1" tests="1" failures="0" errors="0" time="9.645" skipped="0" timestamp="2022-11-21 20:53:48" hostname="Alijandro - CARESOMEBODY" id="Test Suites/Case 1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\User\\git\\QOIN-StudyCase\\Reports\\20221121_205341\\Case 1\\20221121_205341"/>
+         <property name="logFiles" value="C:\\Users\\User\\git\\QOIN-StudyCase\\Reports\\20221121_205341\\Case 1\\20221121_205341\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Alijandro - CARESOMEBODY"/>
+         <property name="hostAddress" value="169.254.226.72"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Select Value Email From GET Single User" time="7.751" classname="Test Cases/Select Value Email From GET Single User" status="PASSED">
+         <system-out><![CDATA[2022-11-21 20:53:49 - [TEST_CASE][PASSED] - Test Cases/Select Value Email From GET Single User: Test Cases/Select Value Email From GET Single User
+
+2022-11-21 20:53:50 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-11-21 20:53:50 - [TEST_STEP][PASSED] - ResponseList = sendRequest(findTestObject("ListUser")): Send request successfully
+
+2022-11-21 20:53:52 - [MESSAGE][INFO] - HAR: C:\Users\User\git\QOIN-StudyCase\Reports\20221121_205341\Case 1\20221121_205341\requests\main\0.har
+
+2022-11-21 20:53:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-11-21 20:53:52 - [TEST_STEP][PASSED] - resultList = slurper.parseText(ResponseList.getResponseBodyContent()): null
+
+2022-11-21 20:53:52 - [TEST_STEP][PASSED] - println(resultList): null
+
+2022-11-21 20:53:53 - [TEST_STEP][PASSED] - ResponseSingle = sendRequest(findTestObject("SingleUser")): Send request successfully
+
+2022-11-21 20:53:54 - [MESSAGE][INFO] - HAR: C:\Users\User\git\QOIN-StudyCase\Reports\20221121_205341\Case 1\20221121_205341\requests\main\1.har
+
+2022-11-21 20:53:54 - [MESSAGE][PASSED] - Send request successfully
+
+2022-11-21 20:53:54 - [TEST_STEP][PASSED] - result = slurper.parseText(ResponseSingle.getResponseBodyContent()): null
+
+2022-11-21 20:53:54 - [TEST_STEP][PASSED] - email = email: null
+
+2022-11-21 20:53:54 - [TEST_STEP][PASSED] - println(email): null
+
+2022-11-21 20:53:54 - [TEST_STEP][PASSED] - email = email: null
+
+2022-11-21 20:53:54 - [TEST_STEP][PASSED] - println("Email di Global Variable = " + email): null
+
+2022-11-21 20:53:54 - [TEST_STEP][PASSED] - ResponseUpdate = sendRequest(findTestObject("Update")): Send request successfully
+
+2022-11-21 20:53:55 - [MESSAGE][INFO] - HAR: C:\Users\User\git\QOIN-StudyCase\Reports\20221121_205341\Case 1\20221121_205341\requests\main\2.har
+
+2022-11-21 20:53:55 - [MESSAGE][PASSED] - Send request successfully
+
+2022-11-21 20:53:55 - [TEST_STEP][PASSED] - resultUpdate = slurper.parseText(ResponseUpdate.getResponseBodyContent()): null
+
+2022-11-21 20:53:55 - [TEST_STEP][PASSED] - println(resultUpdate): null
+
+2022-11-21 20:53:55 - [TEST_STEP][PASSED] - ResponseRegister = sendRequest(findTestObject("RegisterSuccess")): Send request successfully
+
+2022-11-21 20:53:56 - [MESSAGE][INFO] - HAR: C:\Users\User\git\QOIN-StudyCase\Reports\20221121_205341\Case 1\20221121_205341\requests\main\3.har
+
+2022-11-21 20:53:56 - [MESSAGE][PASSED] - Send request successfully
+
+2022-11-21 20:53:56 - [TEST_STEP][PASSED] - resultRegister = slurper.parseText(ResponseRegister.getResponseBodyContent()): null
+
+2022-11-21 20:53:56 - [TEST_STEP][PASSED] - println(resultRegister): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-11-21 20:53:48 - [TEST_SUITE][PASSED] - Case 1: Test Cases/Select Value Email From GET Single User]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
